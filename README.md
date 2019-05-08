@@ -1,86 +1,83 @@
+## ACSS命名规则
 
-# Atomic best practice
+* 首字母命名，如遇“-”，加上“-”后面单词的首字母。
+    *  属性首字母+属性值首字母：e.g:`display:block`，此处取`display`的`d`和`block`的`b`也就是`.db{ display:block; }`。
+    *  属性带有“-”的，取属性首字母+每个“-”后面的首字母+属性值首字母：e.g:`vertical-align: middle`，此处取`vertical-align`的`v`和`a`，以及`middle`的`m`也就是`.vam{ vertical-align: middle}`。
+    *  属性值带有“-”的，取属性首字母+属性值首字母+每个“—”后面的首字母：e.g:`word-wrap: break-word`，此处取`word-wrap`的`w`和`w`，以及`break-word`的`b`和`w`也就是`.wwbw{ word-wrap: break-word}`。
+ 
+* 颜色命名，属性首字母+“_”+颜色值
+    * e.g:`color:#000`，此处取`color`的`c`和颜色的值`000`即`c_100{color:#000}`。
+    * e.g:`background-color:#000`，此处取`background-color`的`b`和`c`和颜色的值`000`即`bc_100{background-color:#000}`。
 
-```SASS
-/* 规范定义的内间距 */
-@include acss-padding((2, 4, 8, 12, 16, 20, 24, 32));
+* 数值命名，属性首字母+数值
+    * e.g:`font-weight:700`，此出取`font-weight`的`f`和`w`，以及数值`700`，也就是`fw700{font-weight:700}`。
 
-/* 规范定义的外间距 */
-@include acss-margin((2, 4, 8, 12, 16, 20, 24, 32, 48));
+* 单位命名，如遇单位为百分比（%）属性首字母+数值+p（percent）
+    * e.g:`width:100%` ，此出取`width`的`w`，以及数值`100`，也就是`.w100p{width:100%}`。
 
-/* 规范定义的字号 */
-@include acss-font-size((0, 12, 14, 16, 18, 20, 24, 32));
+* 小数点命名，只需将`.`替换成`d`
+    * e.g:`line-height:1.2` ，此出取`line-height`的`l`和`h`，以及数值`1d2`加，也就是`.lh1d2{line-height:1.2}`。ß
 
-/* 规范定义的行高 */
-@include acss-line-height((16, 20, 24, 32));
+### 自定义class
 
+|类名|作用|
+|:--:|:--:|
+|.auto|block居中对齐|
+|.clearfix|清除float浮动|
+|.ell|单行结尾省略号|
+|.ell2row|2行结尾省略号|
+|.ell2row.lh1d5|line-height:1.5的限高|
+|.ell2row.lh1d8|line-height:1.8的限高|
+|.i|字段前标签|
+|.trans|过度时间300ms|
 
-/* 颜色 */
-.c_l { color: $c_l; }
-.c_m { color: $c_m; }
-.c_s { color: $c_s; }
-.c_xs { color: $c_xs; }
-.c_success { color: $c_success; }
-.c_danger { color: $c_danger; }
-.c_warning { color: $c_warning; }
-.c_primary { color: $c_primary; }
-.c_fff { color: #fff; }
-.c_000 { color: #000; }
+block居中对齐，example:
+```
+<body>
+    <!--block居中对齐-->
+    <div class="w50p auto">auto</div>
+<body>
+```
 
-/* display */
-.di { display: inline; }
-.db { display: block; }
-.dn { display: none; }
-.dib { display: inline-block; }
+清除float浮动，example:
+```
+<!--清除float浮动-->
+<div class="clearfix">
+    <div class="fl">float left</div>
+    <div class="fr">float right</div>
+</div>
+```
 
-/* text-align */
-.tar { text-align: right; }
-.tac { text-align: center; }
-.tal { text-align: left; }
+单行结尾省略号，example:
+```
+<!--单行结尾省略号-->
+<div style="width:10rem" class="ell">带省略号：ell ell ell ell ell ell ell  ell ell ell ell</div>
+```
 
-/* float */
-.fl { float: left; display: inline; }
-.fr { float: right; }
+两行结尾省略号，example:
+```
+<!--两行结尾省略号-->
+ <div style="width:10rem" class="ell2row">ell2row ell2row ell2row ell2row ell2row ell2row ell2row</div>
+```
 
-/* vertical */
-.vam { vertical-align: middle; }
-.vat { vertical-align: top; }
+line-height:1.5的限高，example:
+```
+<!--line-height:1.5的限高-->
+ <div style="width:10rem" class="ell2row lh1d5 lh24">ell2row ell2row ell2row ell2row ell2row ell2row ell2row</div>
+```
 
-/* 定位 */
-.pr { position: relative; }
-.pa { position: absolute; }
-.t0 { top: 0; }
-.r0 { right: 0; }
-.b0 { bottom: 0; }
-.l0 { left: 0; }
-.t50p { top: 50%; }
-.r50p { right: 50%; }
-.r100p { right: 100%; }
-.l50p { left: 50%; }
-.l100p { left: 100%; }
+line-height:1.8的限高，example:
+```
+<!--line-height:1.8的限高-->
+ <div style="width:10rem" class="ell2row lh1d5 lh24">ell2row ell2row ell2row ell2row ell2row ell2row ell2row</div>
+```
 
-/* 高宽 */
-.w100p { width: 100%; }
-.h100p { height: 100%; }
+.i字段前标签
+```
+ <p><i class="i" style="background:url(pic.png);width: 1rem; height: 1rem;"></i><span>字段前标签</span></p>
+```
 
-/* 文字相关 */
-.fw400 { font-weight: 400; }
-.fw600 { font-weight: 600; }
-.fw700, .fwb { font-weight: 700; }
-.fsi { font-style: italic; }
-.wsn { white-space: nowrap; }
-.wwbw { word-wrap: break-word; word-break: break-all; }
-
-/* 文本转换 */
-.ttu { text-transform: uppercase; }
-.ttc { text-transform: capitalize; }
-.ttn { text-transform: none; }
-.ttl { text-transform: lowercase; }
-
-/* 其它 */
-.oh { overflow: hidden; }
-.vh { visibility: hidden; }
-.z1 { z-index: 1; }
-.br3 { border-radius: px(3); }
-.br100p { border-radius: 100%; }
+过度时间300ms
+```
+<p class="trans" onclick="if(this.className==='trans'){this.className='trans c_primary'}else{this.className='trans'}">点我变色trans</p>
 ```
