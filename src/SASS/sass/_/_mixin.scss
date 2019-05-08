@@ -1,0 +1,64 @@
+/**
+ * @author ziven
+ * @desc base mixin 
+ */
+
+
+// 设置当前单位
+@function px($value) {
+    @return $value / 16 * 1rem;
+}
+
+// 创建基于 ACSS 的 4 个方向的外间距
+@mixin acss-margin($gutters) {
+  @each $gutter in $gutters {
+    .mt#{$gutter} {
+      margin-top: px($gutter);
+    }
+    .mr#{$gutter} {
+      margin-right: px($gutter);
+    }
+    .mb#{$gutter} {
+      margin-bottom: px($gutter);
+    }
+    .ml#{$gutter} {
+      margin-left: px($gutter);
+    }
+  }
+}
+
+// 创建基于 ACSS 的 4 个方向的内间距
+@mixin acss-padding($gutters) {
+  @each $gutter in $gutters {
+    .pt#{$gutter} {
+      padding-top: px($gutter);
+    }
+    .pr#{$gutter} {
+      padding-right: px($gutter);
+    }
+    .pb#{$gutter} {
+      padding-bottom: px($gutter);
+    }
+    .pl#{$gutter} {
+      padding-left: px($gutter);
+    }
+  }
+}
+
+// 创建基于 ACSS的 多个字号
+@mixin acss-font-size($fontSizes) {
+  @each $fontSize in $fontSizes {
+    .fs#{$fontSize} {
+      font-size: px($fontSize);
+    }
+  }
+}
+
+// 创建基于 ACSS的 多个行高
+@mixin acss-line-height($fontSizes) {
+  @each $fontSize in $fontSizes {
+    .lh#{$fontSize} {
+      line-height: px($fontSize);
+    }
+  }
+}  

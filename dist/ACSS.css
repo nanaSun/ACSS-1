@@ -1,0 +1,526 @@
+@charset "UTF-8";
+/**
+* [基础颜色]
+*/
+/**
+* [文字颜色]
+*/
+/**
+ * @author ziven
+ * @desc base mixin 
+ */
+/* 规范定义的内间距 */
+.pt2 {
+  padding-top: 0.125rem; }
+
+.pr2 {
+  padding-right: 0.125rem; }
+
+.pb2 {
+  padding-bottom: 0.125rem; }
+
+.pl2 {
+  padding-left: 0.125rem; }
+
+.pt4 {
+  padding-top: 0.25rem; }
+
+.pr4 {
+  padding-right: 0.25rem; }
+
+.pb4 {
+  padding-bottom: 0.25rem; }
+
+.pl4 {
+  padding-left: 0.25rem; }
+
+.pt8 {
+  padding-top: 0.5rem; }
+
+.pr8 {
+  padding-right: 0.5rem; }
+
+.pb8 {
+  padding-bottom: 0.5rem; }
+
+.pl8 {
+  padding-left: 0.5rem; }
+
+.pt12 {
+  padding-top: 0.75rem; }
+
+.pr12 {
+  padding-right: 0.75rem; }
+
+.pb12 {
+  padding-bottom: 0.75rem; }
+
+.pl12 {
+  padding-left: 0.75rem; }
+
+.pt16 {
+  padding-top: 1rem; }
+
+.pr16 {
+  padding-right: 1rem; }
+
+.pb16 {
+  padding-bottom: 1rem; }
+
+.pl16 {
+  padding-left: 1rem; }
+
+.pt20 {
+  padding-top: 1.25rem; }
+
+.pr20 {
+  padding-right: 1.25rem; }
+
+.pb20 {
+  padding-bottom: 1.25rem; }
+
+.pl20 {
+  padding-left: 1.25rem; }
+
+.pt24 {
+  padding-top: 1.5rem; }
+
+.pr24 {
+  padding-right: 1.5rem; }
+
+.pb24 {
+  padding-bottom: 1.5rem; }
+
+.pl24 {
+  padding-left: 1.5rem; }
+
+.pt32 {
+  padding-top: 2rem; }
+
+.pr32 {
+  padding-right: 2rem; }
+
+.pb32 {
+  padding-bottom: 2rem; }
+
+.pl32 {
+  padding-left: 2rem; }
+
+/* 规范定义的外间距 */
+.mt0 {
+  margin-top: 0rem; }
+
+.mr0 {
+  margin-right: 0rem; }
+
+.mb0 {
+  margin-bottom: 0rem; }
+
+.ml0 {
+  margin-left: 0rem; }
+
+.mt2 {
+  margin-top: 0.125rem; }
+
+.mr2 {
+  margin-right: 0.125rem; }
+
+.mb2 {
+  margin-bottom: 0.125rem; }
+
+.ml2 {
+  margin-left: 0.125rem; }
+
+.mt4 {
+  margin-top: 0.25rem; }
+
+.mr4 {
+  margin-right: 0.25rem; }
+
+.mb4 {
+  margin-bottom: 0.25rem; }
+
+.ml4 {
+  margin-left: 0.25rem; }
+
+.mt8 {
+  margin-top: 0.5rem; }
+
+.mr8 {
+  margin-right: 0.5rem; }
+
+.mb8 {
+  margin-bottom: 0.5rem; }
+
+.ml8 {
+  margin-left: 0.5rem; }
+
+.mt12 {
+  margin-top: 0.75rem; }
+
+.mr12 {
+  margin-right: 0.75rem; }
+
+.mb12 {
+  margin-bottom: 0.75rem; }
+
+.ml12 {
+  margin-left: 0.75rem; }
+
+.mt16 {
+  margin-top: 1rem; }
+
+.mr16 {
+  margin-right: 1rem; }
+
+.mb16 {
+  margin-bottom: 1rem; }
+
+.ml16 {
+  margin-left: 1rem; }
+
+.mt20 {
+  margin-top: 1.25rem; }
+
+.mr20 {
+  margin-right: 1.25rem; }
+
+.mb20 {
+  margin-bottom: 1.25rem; }
+
+.ml20 {
+  margin-left: 1.25rem; }
+
+.mt24 {
+  margin-top: 1.5rem; }
+
+.mr24 {
+  margin-right: 1.5rem; }
+
+.mb24 {
+  margin-bottom: 1.5rem; }
+
+.ml24 {
+  margin-left: 1.5rem; }
+
+.mt32 {
+  margin-top: 2rem; }
+
+.mr32 {
+  margin-right: 2rem; }
+
+.mb32 {
+  margin-bottom: 2rem; }
+
+.ml32 {
+  margin-left: 2rem; }
+
+.mt48 {
+  margin-top: 3rem; }
+
+.mr48 {
+  margin-right: 3rem; }
+
+.mb48 {
+  margin-bottom: 3rem; }
+
+.ml48 {
+  margin-left: 3rem; }
+
+/* 规范定义的字号 */
+.fs0 {
+  font-size: 0rem; }
+
+.fs12 {
+  font-size: 0.75rem; }
+
+.fs14 {
+  font-size: 0.875rem; }
+
+.fs16 {
+  font-size: 1rem; }
+
+.fs18 {
+  font-size: 1.125rem; }
+
+.fs20 {
+  font-size: 1.25rem; }
+
+.fs24 {
+  font-size: 1.5rem; }
+
+.fs32 {
+  font-size: 2rem; }
+
+/* 规范定义的行高 */
+.lh16 {
+  line-height: 1rem; }
+
+.lh20 {
+  line-height: 1.25rem; }
+
+.lh24 {
+  line-height: 1.5rem; }
+
+.lh28 {
+  line-height: 1.75rem; }
+
+.lh32 {
+  line-height: 2rem; }
+
+/* 颜色 basedOnUI  */
+.c_l {
+  color: #1f2129; }
+
+.c_m {
+  color: #5a5b66; }
+
+.c_s {
+  color: #83848f; }
+
+.c_xs {
+  color: #c0c2cc; }
+
+.c_success {
+  color: #39cca0; }
+
+.c_danger {
+  color: #f53165; }
+
+.c_warning {
+  color: #ff8d29; }
+
+.c_primary {
+  color: #3b66f5; }
+
+/*color .c_<value> 色号命名*/
+.c_fff {
+  color: #fff; }
+
+.c_000 {
+  color: #000; }
+
+/*background-color .bc_<value> 色号命名*/
+.bc_fff {
+  background-color: #fff; }
+
+.bc_000 {
+  background-color: #000; }
+
+/* text-align */
+.tar {
+  text-align: right; }
+
+.tac {
+  text-align: center; }
+
+.tal {
+  text-align: left; }
+
+/* text-transform */
+.ttu {
+  text-transform: uppercase; }
+
+.ttc {
+  text-transform: capitalize; }
+
+.ttn {
+  text-transform: none; }
+
+.ttl {
+  text-transform: lowercase; }
+
+/* 文字相关 */
+.fw100, .fwl {
+  font-weight: 100; }
+
+.fw400, .fwn {
+  font-weight: 400; }
+
+.fw600 {
+  font-weight: 600; }
+
+.fw700, .fwb {
+  font-weight: 700; }
+
+.fw900, .fwbr {
+  font-weight: 900; }
+
+/*文字倾斜*/
+.fsi {
+  font-style: italic; }
+
+.fsn {
+  font-style: normal; }
+
+/*文字溢出*/
+.wsn {
+  white-space: nowrap; }
+
+.wwbw {
+  word-wrap: break-word;
+  word-break: break-all; }
+
+/* vertical */
+.vam {
+  vertical-align: middle; }
+
+.vat {
+  vertical-align: top; }
+
+/* display */
+.di {
+  display: inline; }
+
+.db {
+  display: block; }
+
+.dn {
+  display: none; }
+
+.dib {
+  display: inline-block; }
+
+/* float */
+.fl {
+  float: left;
+  display: inline; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+/* 定位 */
+.pr {
+  position: relative; }
+
+.pf {
+  position: fixed; }
+
+.pa {
+  position: absolute; }
+
+.t0 {
+  top: 0; }
+
+.r0 {
+  right: 0; }
+
+.b0 {
+  bottom: 0; }
+
+.l0 {
+  left: 0; }
+
+.t50p {
+  top: 50%; }
+
+.r50p {
+  right: 50%; }
+
+.r100p {
+  right: 100%; }
+
+.l50p {
+  left: 50%; }
+
+.l100p {
+  left: 100%; }
+
+/* 高宽 */
+.w50p {
+  width: 50%; }
+
+.w100p {
+  width: 100%; }
+
+.h100p {
+  height: 100%; }
+
+/* flex */
+.df {
+  display: flex; }
+
+.f1 {
+  flex: 1; }
+
+.aic {
+  align-items: center; }
+
+.jcc {
+  justify-content: center; }
+
+.fdr {
+  flex-direction: row; }
+
+.fdc {
+  flex-direction: column; }
+
+/* mobile */
+.pa_vc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.pa_auto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* 其它 */
+.oh {
+  overflow: hidden; }
+
+.vh {
+  visibility: hidden; }
+
+.z1 {
+  z-index: 1; }
+
+.br3 {
+  border-radius: 0.1875rem; }
+
+.br100p {
+  border-radius: 100%; }
+
+/* custome */
+.auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both; }
+
+.ell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.ell2row {
+  display: -webkit-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; }
+
+.ell2row.lh1d5 {
+  max-height: 3em; }
+
+.ell2row.lh1d8 {
+  max-height: 3.6em; }
+
+.i {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  vertical-align: middle; }
+
+.trans {
+  transition: 300ms; }
+

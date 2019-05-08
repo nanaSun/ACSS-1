@@ -1,0 +1,123 @@
+@import "_/_variable";
+@import "_/_mixin"; 
+
+/* 规范定义的内间距 */
+@include acss-padding((2, 4, 8, 12, 16, 20, 24, 32));
+
+/* 规范定义的外间距 */
+@include acss-margin((0,2, 4, 8, 12, 16, 20, 24, 32, 48));
+
+/* 规范定义的字号 */
+@include acss-font-size((0, 12, 14, 16, 18, 20, 24, 32));
+
+/* 规范定义的行高 */
+@include acss-line-height((16, 20, 24, 28, 32));
+
+
+/* 颜色 basedOnUI  */
+.c_l { color: $c_l; }
+.c_m { color: $c_m; }
+.c_s { color: $c_s; }
+.c_xs { color: $c_xs; }
+.c_success { color: $c_success; }
+.c_danger { color: $c_danger; }
+.c_warning { color: $c_warning; }
+.c_primary { color: $c_primary; }
+
+/*color .c_<value> 色号命名*/
+.c_fff { color: #fff; }
+.c_000 { color: #000; }
+
+/*background-color .bc_<value> 色号命名*/
+.bc_fff { background-color: #fff; }
+.bc_000 { background-color: #000; }
+
+/* text-align */
+.tar { text-align: right; }
+.tac { text-align: center; }
+.tal { text-align: left; }
+
+/* text-transform */
+.ttu { text-transform: uppercase; }
+.ttc { text-transform: capitalize; }
+.ttn { text-transform: none; }
+.ttl { text-transform: lowercase; }
+
+/* 文字相关 */
+.fw100, .fwl { font-weight: 100; }
+.fw400,.fwn{ font-weight: 400;}
+.fw600 { font-weight: 600; }
+.fw700, .fwb { font-weight: 700; }
+.fw900, .fwbr{font-weight: 900; }
+
+/*文字倾斜*/
+.fsi { font-style: italic; }
+.fsn { font-style: normal; }
+
+/*文字溢出*/
+.wsn { white-space: nowrap; }
+.wwbw { word-wrap: break-word; word-break: break-all; }
+
+/* vertical */
+.vam { vertical-align: middle; }
+.vat { vertical-align: top; }
+
+/* display */
+.di { display: inline; }
+.db { display: block; }
+.dn { display: none; }
+.dib { display: inline-block; }
+
+/* float */
+.fl { float: left; display: inline; }
+.fr { float: right; display: inline; }
+
+/* 定位 */
+.pr { position: relative; }
+.pf { position: fixed; }
+.pa { position: absolute; }
+.t0 { top: 0; }
+.r0 { right: 0; }
+.b0 { bottom: 0; }
+.l0 { left: 0; }
+.t50p { top: 50%; }
+.r50p { right: 50%; }
+.r100p { right: 100%; }
+.l50p { left: 50%; }
+.l100p { left: 100%; }
+
+/* 高宽 */
+.w50p { width: 50%; }
+.w100p { width: 100%; }
+.h100p { height: 100%; }
+
+/* flex */
+.df { display: flex; }
+.f1 { flex: 1; }
+.aic { align-items: center; }
+.jcc { justify-content: center; }
+.fdr { flex-direction: row; }
+.fdc { flex-direction: column; }
+
+/* mobile */
+.pa_vc { position: absolute; top: 50%; transform: translateY(-50%); }
+.pa_auto { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+
+/* 其它 */
+.oh { overflow: hidden; }
+.vh { visibility: hidden; }
+.z1 { z-index: 1; }
+.br3 { border-radius: px(3); }
+.br100p { border-radius: 100%; }
+
+/* custome */
+.auto { margin-left: auto; margin-right: auto; }
+.clearfix:after { content: ""; display: block; overflow: hidden; height: 0; clear: both; }
+.ell { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ell2row { display: -webkit-box; overflow: hidden; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.ell2row.lh1d5 { max-height: 3em; }
+.ell2row.lh1d8 { max-height: 3.6em; }
+.i { display: inline-block; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; vertical-align: middle; }
+.trans { transition: 300ms; }
+
