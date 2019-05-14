@@ -83,5 +83,4 @@ line-height:1.8的限高，example:
 ```
 <p class="trans" onclick="if(this.className==='trans'){this.className='trans c_primary'}else{this.className='trans'}">点我变色trans</p>
 ```
-
-<iframe width="100%“ frameborder="0" src="./dist/"></iframe>
+<iframe src="./dist/deubdexmo.html" frameborder="10" height="400" width="100%"></iframe>
